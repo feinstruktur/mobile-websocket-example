@@ -5,9 +5,12 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.5.3)
     eventmachine (1.0.3)
+    eventmachine (1.0.3-java)
     http_parser.rb (0.5.3)
+    http_parser.rb (0.5.3-java)
 
 PLATFORMS
+  java
   ruby
 
 DEPENDENCIES

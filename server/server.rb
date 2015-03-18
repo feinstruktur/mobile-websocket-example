@@ -8,7 +8,7 @@ EventMachine.run do
       sid = @channel.subscribe { |msg| ws.send(msg) }
       @channel.push("#{sid} connected")
 
-      ws.onmessage { |msg| @channel.push("<#{sid}> #{msg}") }
+      ws.onmessage { |msg| @channel.push("#{msg}") }
       
       ws.onclose { @channel.unsubscribe(sid) }
     end
